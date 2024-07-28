@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    {% if plot_url %}
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Stock Price Prediction">
+    {% else %}
+        <p>No graph available.</p>
+    {% endif %}
+</body>
+</html>
